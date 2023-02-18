@@ -1,0 +1,4 @@
+﻿  Application.cpp
+C:\Development\FH\Sem2\EA\WeaselEngine\Sandbox\src\Application.cpp(5,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+Application.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl Weasel::Print(void)" (__imp_?Print@Weasel@@YAXXZ)
+C:\Development\FH\Sem2\EA\WeaselEngine\x64\Release\Sandbox.exe : fatal error LNK1120: 1 unresolved externals

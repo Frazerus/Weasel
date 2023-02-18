@@ -1,0 +1,4 @@
+﻿  test.cpp
+     Creating library C:\Development\FH\Sem2\EA\WeaselEngine\x64\Release\Weasel.lib and object C:\Development\FH\Sem2\EA\WeaselEngine\x64\Release\Weasel.exp
+MSVCRT.lib(exe_main.obj) : error LNK2001: unresolved external symbol main
+C:\Development\FH\Sem2\EA\WeaselEngine\x64\Release\Weasel.exe : fatal error LNK1120: 1 unresolved externals
