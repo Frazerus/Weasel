@@ -1,0 +1,3 @@
+[submodule "Weasel/vendor/spdlog"]
+	path = Weasel/vendor/spdlog
+	url = https://github.com/gabime/spdlog

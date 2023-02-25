@@ -4,7 +4,10 @@
 extern Weasel::Application* Weasel::CreateApplication();
 int main(int argc, char** argv)
 {
-	printf("Weasel Engine\n");
+	Weasel::Log::Init();
+	WS_CORE_WARN("Initialized Log!");
+	auto a = 5;
+	WS_CLIENT_INFO("HELLO! Var = {0}", a);
 	auto app = Weasel::CreateApplication();
 	app->Run();
 	delete app;
