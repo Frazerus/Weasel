@@ -38,3 +38,19 @@ Package managers in c++ let developers capture artifacts that are created by bui
 - conan
 - vcpkg
 - spack
+
+## Asignment 3
+
+### What is the difference between a dynamic linked library and a static library?
+In static linking, a copy of the library is directly part of the executable. In dynamic linking, the combination happens during runtime.
+### Describe a logging system with your own words:
+A logging system is a system that provides logging functionality. Logging functionality is the ability to keep a log of events that occur in an application. These events might be errors, debug info, warnings or just simple info. 
+### What is a Design Pattern?
+A solution to a typical and often occuring problem in the designing of software. Several types: 
+- Creational
+- Structural
+- Behavioral
+### Name and describe 2 Design Patterns (except façade or adapter):
+- Strategy (behavioral): Some class (context) may do something specific in different ways. To enable this behaviour, the specific part should be a strategy, which simply implements the strategy interface. The context then only needs to call the method of the strategy interface, the implementation of which was supplied by its caller, to use the specific functionality. 
+- Visitor (behavioral): Place wanted behaviour of classes that should no be changed into a new visitor class. The original class is passed to the visitor for it to access the required data. With several different classes, a visitor might implement several methods.
+To call the visitors behavior, the original class should have a method to accept a visitor and call the correct method. This way the og class was changed in a trivial way, and if the need arises again it can be extended without further changes. 
