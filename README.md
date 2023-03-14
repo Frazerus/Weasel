@@ -43,8 +43,8 @@ Package managers in c++ let developers capture artifacts that are created by bui
 
 ### What is the difference between a dynamic linked library and a static library?
 In static linking, a copy of the library is directly part of the executable. In dynamic linking, the combination happens during runtime.
-### Describe a logging system with your own words:
-A logging system is a system that provides logging functionality. Logging functionality is the ability to keep a log of events that occur in an application. These events might be errors, debug info, warnings or just simple info. 
+### Describe an event system with your own words:
+An event system is a system which enables communication between different parts of the engine/game, without having to rely on other classes, just the event system needs to be referenced. This allows for nice
 ### What is a Design Pattern?
 A solution to a typical and often occuring problem in the designing of software. Several types: 
 - Creational
