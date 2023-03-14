@@ -18,6 +18,9 @@ project "Weasel"
 	targetdir  ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir  ("obj/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "wspch.h"
+	pchsource "Weasel/src/wspch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

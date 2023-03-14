@@ -2,9 +2,6 @@
 
 #include "Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Weasel {
 
 	// Events in Weasel are currently blocking, meaning when an event occurs it
