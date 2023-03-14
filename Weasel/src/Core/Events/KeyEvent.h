@@ -60,7 +60,6 @@ namespace Weasel {
 			return ss.str();
 		}
 
-		EVENT_CLASS_TYPE(KeyTyped)
 	};
 
 }

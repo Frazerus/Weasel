@@ -37,6 +37,7 @@
     <ClInclude Include="src\wspch.h" />
     <ClInclude Include="src\Core\Window.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\Core\Mousecodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application.cpp">

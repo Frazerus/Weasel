@@ -154,6 +154,7 @@
     <ClInclude Include="src\Core\Events\KeyEvent.h" />
     <ClInclude Include="src\Core\Events\MouseEvent.h" />
     <ClInclude Include="src\Core\Log.h" />
+    <ClInclude Include="src\Core\Mousecodes.h" />
     <ClInclude Include="src\Weasel.h" />
     <ClInclude Include="src\Core\Window.h" />
     <ClInclude Include="src\wspch.h" />

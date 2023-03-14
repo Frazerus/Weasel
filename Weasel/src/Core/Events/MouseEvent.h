@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Event.h"
+#include "Core/Mousecodes.h"
 
 
 namespace Weasel
@@ -48,7 +49,7 @@ namespace Weasel
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
 
 	private:
-		float m_MouseX, m_MouseY;
+		float m_XOffset, m_YOffset;
 	};
 
 	class WEASEL_API MouseButtonEvent : public Event
