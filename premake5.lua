@@ -10,6 +10,12 @@ workspace "Weasel"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.systeym}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Weasel/vendor/GLFW/include"
+
+include "Weasel/vendor/GLFW"
+
+
 project "Weasel"
 	location "Weasel"
 	kind "SharedLib"
@@ -30,7 +36,14 @@ project "Weasel"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	postbuildcommands

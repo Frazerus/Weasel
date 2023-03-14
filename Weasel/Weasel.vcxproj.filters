@@ -35,6 +35,8 @@
     </ClInclude>
     <ClInclude Include="src\Weasel.h" />
     <ClInclude Include="src\wspch.h" />
+    <ClInclude Include="src\Core\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="src\wspch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
