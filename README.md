@@ -54,3 +54,21 @@ A solution to a typical and often occuring problem in the designing of software.
 - Strategy (behavioral): Some class (context) may do something specific in different ways. To enable this behaviour, the specific part should be a strategy, which simply implements the strategy interface. The context then only needs to call the method of the strategy interface, the implementation of which was supplied by its caller, to use the specific functionality. 
 - Visitor (behavioral): Place wanted behaviour of classes that should no be changed into a new visitor class. The original class is passed to the visitor for it to access the required data. With several different classes, a visitor might implement several methods.
 To call the visitors behavior, the original class should have a method to accept a visitor and call the correct method. This way the og class was changed in a trivial way, and if the need arises again it can be extended without further changes. 
+
+## Assignment 4
+
+### What is a precompiled header? Name pros and cons:
+#include directives copy code, potentially adding thousands of lines of code, precompiled headers compile each header once, the includes the compiled state, therefore removing redundant compilation.
+Pros: 
+- completes a lot quicker
+- no recompilation for code that hasnt changed (if you use precompiled headers in a good way)
+Cons:
+- can be fiddly to set up and maintain
+### Describe the layer of abstraction with your own words:
+A layer of abstraction is a layer which enables loose coupling between the thing that is to be abstraced and the rest of the code. This can be used to create implementations which can easily be swapped afterwards, eg: An early logging library is used and abstraced. At a later time, we dont need to change all the code which uses the logging library, since it only knows the abstraction. The new logging library implements the abstraction and can therefore be used instead of the old library. 
+### Name the SOLID principles and describe them briefly:
+S -> Single responsibility
+O -> Open closed principle -> open for additions, closed for changes
+L -> Lishkov substitution -> sublcasses should be substitutable for their base classes
+I -> Interface segregation princeiple -> dont put everything in a single interface, create multiple and let classes implment the required ones
+D -> Dependency inversion -> Classes should depend on interfaces or abstract classes instead of concrete classes and functions
